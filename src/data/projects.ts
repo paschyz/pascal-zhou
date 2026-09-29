@@ -19,7 +19,7 @@ export interface Project {
     | { type: 'app'; screen: string; icon: string }
     | { type: 'pairo' }
     | { type: 'cvflow' }
-    | { type: 'chess' }
+    | { type: 'jev' }
 }
 
 export const projects: Project[] = [
@@ -60,19 +60,17 @@ export const projects: Project[] = [
     visual: { type: 'cvflow' },
   },
   {
-    id: 'kaochess',
+    id: 'jev',
     index: 3,
-    variant: 'kaochess',
-    category: 'Jeu de stratégie',
-    status: 'Disponible gratuitement',
-    title: 'KaoChess',
-    slug: 'kaochess',
+    variant: 'jev',
+    category: 'Developer Tools',
+    status: 'En développement',
+    title: 'Jev Ticket Moderator',
+    slug: 'jev-ticket-moderator',
     description:
-      'Les échecs, bousculés par un jeu de cartes. Une expérience stratégique où chaque partie peut changer de direction.',
-    tags: ['React', 'TypeScript', 'Jeu web'],
-    links: [
-      { label: 'Site web', href: 'https://www.kaochess.com', external: true },
-    ],
-    visual: { type: 'chess' },
+      'Système de triage automatique de tickets support propulsé par l\'IA. Classe, évalue l\'urgence et route les tickets vers les bonnes files d\'attente, avec escalade automatique vers un humain pour les cas sensibles.',
+    tags: ['AI', 'TypeScript', 'React'],
+    links: [],
+    visual: { type: 'jev' },
   },
 ]

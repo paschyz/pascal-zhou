@@ -50,15 +50,20 @@ function CvFlowVisual() {
   )
 }
 
-function ChessVisual() {
+function JevVisual() {
   return (
-    <div className="chess-visual" aria-hidden="true">
-      <div className="chess-card chess-card-back" />
-      <div className="chess-card chess-card-front">
-        <span>♞</span>
-        <small>K</small>
+    <div className="jev-visual" aria-hidden="true">
+      <div className="jev-card jev-card-ticket">
+        <div className="jev-badge" />
+        <div className="jev-line jev-line--wide" />
+        <div className="jev-line jev-line--medium" />
+        <div className="jev-line jev-line--narrow" />
       </div>
-      <div className="chess-grid" />
+      <div className="jev-card jev-card-triage">
+        <span>↗</span>
+        <small>AI</small>
+      </div>
+      <div className="jev-grid" />
     </div>
   )
 }
@@ -67,7 +72,7 @@ function ProjectVisual({ project }: { project: Project }) {
   switch (project.visual.type) {
     case 'pairo': return <PairoVisual />
     case 'cvflow': return <CvFlowVisual />
-    case 'chess': return <ChessVisual />
+    case 'jev': return <JevVisual />
     case 'app': return <AppVisual project={project as Project & { visual: { type: 'app'; screen: string; icon: string } }} />
   }
 }
