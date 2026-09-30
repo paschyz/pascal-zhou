@@ -41,7 +41,7 @@ export default function Hero() {
             </li>
           ))}
         </ol>
-        <p>Applications mobiles · outils web · jeu de stratégie</p>
+        <p>Outils web · SaaS · IA</p>
       </aside>
     </section>
   )

@@ -14,11 +14,14 @@ export default function AboutSection() {
             mécanique. Je les imagine, les développe et les fais évoluer au fil des usages.
           </p>
           <div className="contact-links">
-            <a href="mailto:pascal.zhou.pro@gmail.com">
-              M'écrire <ArrowIcon />
+            <a href="https://www.linkedin.com/in/pascal-zhou">
+              LinkedIn <ArrowIcon />
             </a>
             <a href="https://github.com/paschyz">
               GitHub <ArrowIcon />
+            </a>
+            <a href="mailto:pascal.zhou.pro@gmail.com">
+              M'écrire <ArrowIcon />
             </a>
           </div>
         </div>
